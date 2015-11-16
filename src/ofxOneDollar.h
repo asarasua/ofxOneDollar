@@ -18,10 +18,9 @@ struct Vec2d {
 	}
 	
 	Vec2d operator =(const Vec2d& rOther) {
-		Vec2d tmp;
-		tmp.x = rOther.x;
-		tmp.y = rOther.y;
-		return tmp;
+		x = rOther.x;
+		y = rOther.y;
+		return *this;
 	}
 };
 
